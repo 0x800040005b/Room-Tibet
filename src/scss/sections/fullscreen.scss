@@ -32,11 +32,13 @@
 
 .form{
   &-block{
-    justify-content: center;
+    //justify-content: center;
     align-items: start;
   }
   &-field{
     height: 52px;
+    width: 270px;
+    max-width: 270px;
     padding: 8px 16px;
     margin-bottom: 8px;
     &-wrapper{
