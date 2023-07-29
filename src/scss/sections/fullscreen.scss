@@ -1,0 +1,81 @@
+.fullscreen-top {
+  background-image: url("../img/Fullscreen/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.slogan {
+  justify-content: center;
+  align-items: start;
+  margin-top: 463px;
+
+  &__title {
+
+    color: $white;
+    line-height: 150%;
+    letter-spacing: 1px;
+    font: {
+      family: "NEXT ART";
+      size: 50px;
+      weight: 700;
+    }
+  }
+}
+
+.calculator {
+  padding: 42px 40px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.20);
+  backdrop-filter: blur(3px);
+}
+
+.form{
+  &-block{
+    justify-content: center;
+    align-items: start;
+  }
+  &-field{
+    height: 52px;
+    padding: 8px 16px;
+    margin-bottom: 8px;
+    &-wrapper{
+      margin-right: 24px;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+
+    &__label {
+      display: block;
+      color: $white;
+      line-height: 150%;
+      font:{
+        size:14px;
+        weight: 400;
+      }
+    }
+  }
+}
+
+
+.program {
+  &-button {
+    color: $dark-green;
+    background-color: $white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+    letter-spacing: 0.192px;
+    transition: color, background-color 0.8s ease;
+    border: none;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $dark-green;
+      color: $white;
+    }
+  }
+
+}
