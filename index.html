@@ -67,45 +67,84 @@
     </header>
     <div class="slogan row">
         <div class="container">
-        <h1 class="slogan__title">
-            Насладись прогулкой в горах <br/> с командой единомышленников
-        </h1>
+            <h1 class="slogan__title">
+                Насладись прогулкой в горах <br/> с командой единомышленников
+            </h1>
 
-        <div class="calculator">
-            <form action="#" method="POST" name="program">
-                <div class="row form-block">
-                    <div class="form-field-wrapper">
-                        <select name="location" id="location" placeholder="Локация для тура" class="location form-field">
-                            <option value="location 1">Location 1</option>
-                            <option value="location 2">Location 2</option>
-                            <option value="location 3">Location 3</option>
-                        </select>
-                        <small class="form-field__label">выберите из списка</small>
+            <div class="calculator">
+                <form action="#" method="POST" name="program">
+                    <div class="row form-block">
+                        <div class="form-field-wrapper">
+                            <select name="location" id="location" placeholder="Локация для тура"
+                                    class="location form-field">
+                                <option value="location 1">Location 1</option>
+                                <option value="location 2">Location 2</option>
+                                <option value="location 3">Location 3</option>
+                            </select>
+                            <small class="form-field__label">выберите из списка</small>
 
+                        </div>
+                        <div class="form-field-wrapper">
+                            <input type="date" name="program-date" placeholder="Дата похода"
+                                   class="program-date form-field">
+                            <small class="form-field__label">укажите диапазон</small>
+
+                        </div>
+                        <div class="form-field-wrapper">
+                            <select name="participants" id="participants" placeholder="Локация для тура"
+                                    class="participants form-field">
+                                <option value="Participant 1">Participant 1</option>
+                                <option value="Participant 2">Participant 2</option>
+                                <option value="Participant 3">Participant 3</option>
+                            </select>
+                            <small class="form-field__label">минимум 4 человека</small>
+
+                        </div>
+
+
+                        <button type="submit" class="large-button program-button">Найти программу</button>
                     </div>
-                    <div class="form-field-wrapper">
-                        <input type="date" name="program-date" placeholder="Дата похода" class="program-date form-field">
-                        <small class="form-field__label">укажите диапазон</small>
+                </form>
+            </div>
+        </div>
 
-                    </div>
-                    <div class="form-field-wrapper">
-                        <select name="participants" id="participants" placeholder="Локация для тура" class="participants form-field">
-                            <option value="Participant 1">Participant 1</option>
-                            <option value="Participant 2">Participant 2</option>
-                            <option value="Participant 3">Participant 3</option>
-                        </select>
-                        <small class="form-field__label">минимум 4 человека</small>
+    </div>
 
-                    </div>
+</section>
 
-
-
-                    <button type="submit" class="large-button program-button">Найти программу</button>
+<section class="about">
+    <div class="container">
+        <div class="about-items row">
+            <div class="about-images">
+                <div class="about-image-block about-image-block_1">
+                    <img src="dist/img/About/1_rounded.png" alt="mountains" class="about-image">
                 </div>
-            </form>
-        </div>
-        </div>
+                <div class="about-image-block about-image-block_2">
+                    <a href="#" class="about-image__link">
+                        <img src="dist/img/About/2_rounded.png" alt="mountains" class="about-image">
+                        <span class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+  <path d="M8.24267 3.65572C7.96389 3.49647 7.64819 3.41323 7.32714 3.41432C7.00609 3.4154 6.69096 3.50078 6.41326 3.6619C6.13557 3.82302 5.90506 4.05424 5.74479 4.33242C5.58451 4.6106 5.5001 4.926 5.5 5.24705V16.7549C5.5001 17.0759 5.58451 17.3913 5.74479 17.6695C5.90506 17.9477 6.13557 18.1789 6.41326 18.34C6.69096 18.5012 7.00609 18.5865 7.32714 18.5876C7.64819 18.5887 7.96389 18.5055 8.24267 18.3462L18.3113 12.5914C18.5917 12.431 18.8248 12.1993 18.9869 11.9199C19.1489 11.6404 19.2343 11.3231 19.2343 11C19.2343 10.677 19.1489 10.3597 18.9869 10.0802C18.8248 9.80079 18.5917 9.56913 18.3113 9.40872L8.24267 3.65572Z" fill="#1A3E3E"/>
+</svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="about-text">
+                <h2 class="about-text__label">
+                    о нашем походе
+                </h2>
+                <h3 class="about-text__title">
+                    Исследуйте все горные массивы мира вместе с нами
+                </h3>
 
+                <p class="about-text__info">
+                    Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur"и занялся его поисками в классической латинской литературе.
+                </p>
+
+                <a href="#" class="button large-button about-text__link hovered-button">Программа тура</a>
+            </div>
+        </div>
     </div>
 
 </section>
