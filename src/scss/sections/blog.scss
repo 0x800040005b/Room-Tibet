@@ -1,6 +1,4 @@
 .blog{
-  padding-top: 80px;
-  padding-bottom: 100px;
   background: $light-gray;
   &-text{
     text-align: center;
@@ -15,7 +13,7 @@
   &-card{
     margin-right: 20px;
     max-height: 312px;
-    &:last-child{
+    &:last-of-type{
       margin-bottom: 0;
     }
     width: 100%;

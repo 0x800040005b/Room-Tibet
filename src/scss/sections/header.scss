@@ -21,7 +21,7 @@
     line-height: normal;
     &__item{
       margin-right: 24px;
-      &:last-child{
+      &:last-of-type{
         margin-right: 0;
       }
     }

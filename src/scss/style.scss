@@ -24,6 +24,11 @@ body{
   }
 
 }
+
+section{
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
 h1,h2,h3,h4,h5,h6, p{
   margin: 0;
   padding: 0;
@@ -52,13 +57,20 @@ a{
   display: flex;
 
 }
+.grid{
+  display: grid;
+}
 .fullscreen{
   min-height: 100vh;
   height: 100vh;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .block-text{
   max-width: 580px;
+  text-align: center;
+  margin: 0 auto;
 }
 .text-label{
   line-height: 83.333%;
@@ -91,6 +103,11 @@ a{
   }
 }
 
+.bottom-section{
+  text-align: center;
+
+}
+
 .hovered-item{
   transition: width 0.5s ease;
   &::after{
@@ -109,6 +126,14 @@ a{
   }
 }
 
+.mb-0{
+  margin-bottom: 0!important;
+}
+.bottom-section{
+  text-align: center;
+  margin-top: 50px;
+}
+
 
 
 
@@ -118,6 +143,7 @@ a{
 @import "sections/offer";
 @import "sections/popular";
 @import "sections/blog";
+@import "sections/gallery";
 
 
 

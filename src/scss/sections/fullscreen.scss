@@ -1,4 +1,5 @@
 .fullscreen-top {
+  padding-top: 16px;
   background-image: url("../img/Fullscreen/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -43,7 +44,7 @@
     margin-bottom: 8px;
     &-wrapper{
       margin-right: 24px;
-      &:last-child{
+      &:last-of-type{
         margin-right: 0;
       }
     }
@@ -72,6 +73,7 @@
     letter-spacing: 0.192px;
     transition: color, background-color 0.5s ease;
     border: none;
+    margin-left: 24px;
 
     &:hover {
       cursor: pointer;
