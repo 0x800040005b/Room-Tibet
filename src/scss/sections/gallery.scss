@@ -1,4 +1,8 @@
 .gallery{
+  &-text{
+    text-align: center;
+    margin: 0 auto;
+  }
   &-items{
     //grid-template-rows: repeat(2, 520px);
     grid-template-columns: repeat(4, 280px);
