@@ -91,6 +91,25 @@ a{
   }
 }
 
+.hovered-item{
+  transition: width 0.5s ease;
+  &::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: $dark-green;
+    transition: width 0.5s ease;
+
+  }
+  &:hover{
+    &::after{
+      width: 100%;
+    }
+  }
+}
+
+
 
 
 @import "sections/fullscreen";
@@ -98,6 +117,7 @@ a{
 @import "sections/about";
 @import "sections/offer";
 @import "sections/popular";
+@import "sections/blog";
 
 
 
