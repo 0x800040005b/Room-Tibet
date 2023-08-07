@@ -48,6 +48,7 @@
         margin-right: 0;
       }
     }
+  
 
     &__label {
       display: block;
@@ -59,10 +60,63 @@
       }
     }
   }
+  &-controls {
+    position: relative;
+  }
+  &-select {
+    background-color: transparent;
+    color: $white;
+    border:1px solid $white;
+    border-radius: 4px;
+    line-height: 150%;
+    position: relative;
+    font:{
+      size: 16px;
+      weight:700
+    }
+    appearance: none;            /* remove arrow        */
+    -webkit-appearance: none;    /* remove arrow Chrome */
+    -moz-appearance: none;       /* remove arrow FF     */
+    outline:none;
+    &__arrow {
+      position: absolute;
+      top: 25%;
+      right: 10px;
+      pointer-events: none;
+    }
+    & option {
+      color: $black;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+    } 
+    &-calendar {
+      &__icon {
+        position: absolute;
+        top: 25%;
+        right: 10px;
+        pointer-events: none;
+      }
+    }
+  }
+
+
+
+ select::-ms-expand{
+  display: none;             /* remove arrow IE     */
 }
 
 
 .program {
+  &-date {
+    &::-webkit-inner-spin-button,
+    &::-webkit-calendar-picker-indicator {
+      // display: none;
+      // -webkit-appearance: none;
+      color-scheme: dark;
+    }
+  }
   &-button {
     color: $dark-green;
     background-color: $white;
@@ -83,5 +137,4 @@
   }
 
 }
-
 

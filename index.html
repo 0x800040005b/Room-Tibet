@@ -126,28 +126,41 @@
                 <form action="#" method="POST" name="program">
                     <div class="row form-block">
                         <div class="form-field-wrapper">
-                            <select name="location" id="location" placeholder="Локация для тура"
-                                    class="location form-field">
-                                <option value="location 1">Location 1</option>
-                                <option value="location 2">Location 2</option>
-                                <option value="location 3">Location 3</option>
-                            </select>
+                            <div class="form-controls">
+                                <select name="location" id="location" placeholder="Локация для тура"
+                                class="location form-field form-select">
+                            <option value="location 1" selected>Location 1</option>
+                            <option value="location 2">Location 2</option>
+                            <option value="location 3">Location 3</option>
+                        </select>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="form-select__arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M16.2475 6.6574L9.99997 12.7474L3.75247 6.6574C3.64085 6.54837 3.49101 6.48733 3.33497 6.48733C3.17894 6.48733 3.0291 6.54837 2.91747 6.6574C2.86343 6.71036 2.82049 6.77356 2.79118 6.84332C2.76186 6.91308 2.74677 6.98798 2.74677 7.06365C2.74677 7.13932 2.76186 7.21422 2.79118 7.28398C2.82049 7.35374 2.86343 7.41694 2.91747 7.4699L9.56372 13.9499C9.68044 14.0637 9.83698 14.1273 9.99997 14.1273C10.163 14.1273 10.3195 14.0637 10.4362 13.9499L17.0825 7.47115C17.1369 7.41816 17.1802 7.35479 17.2097 7.2848C17.2392 7.21481 17.2545 7.13962 17.2545 7.06365C17.2545 6.98768 17.2392 6.91248 17.2097 6.8425C17.1802 6.77251 17.1369 6.70914 17.0825 6.65615C16.9709 6.54712 16.821 6.48608 16.665 6.48608C16.5089 6.48608 16.3591 6.54712 16.2475 6.65615V6.6574Z" fill="#FDFDFD"/>
+                          </svg>
+
+                            </div>
                             <small class="form-field__label">выберите из списка</small>
 
                         </div>
                         <div class="form-field-wrapper">
+                            <div class="form-controls">
                             <input type="date" name="program-date" placeholder="Дата похода"
-                                   class="program-date form-field">
+                                   class="program-date form-field form-select">
+                                </div>
                             <small class="form-field__label">укажите диапазон</small>
 
                         </div>
                         <div class="form-field-wrapper">
-                            <select name="participants" id="participants" placeholder="Локация для тура"
-                                    class="participants form-field">
-                                <option value="Participant 1">Participant 1</option>
-                                <option value="Participant 2">Participant 2</option>
-                                <option value="Participant 3">Participant 3</option>
-                            </select>
+                            <div class="form-controls">
+                                <select name="participants" id="participants" placeholder="Локация для тура"
+                                class="participants form-field form-select">
+                            <option value="Participant 1" selected>Participant 1</option>
+                            <option value="Participant 2">Participant 2</option>
+                            <option value="Participant 3">Participant 3</option>
+                        </select>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="form-select__arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M16.2475 6.6574L9.99997 12.7474L3.75247 6.6574C3.64085 6.54837 3.49101 6.48733 3.33497 6.48733C3.17894 6.48733 3.0291 6.54837 2.91747 6.6574C2.86343 6.71036 2.82049 6.77356 2.79118 6.84332C2.76186 6.91308 2.74677 6.98798 2.74677 7.06365C2.74677 7.13932 2.76186 7.21422 2.79118 7.28398C2.82049 7.35374 2.86343 7.41694 2.91747 7.4699L9.56372 13.9499C9.68044 14.0637 9.83698 14.1273 9.99997 14.1273C10.163 14.1273 10.3195 14.0637 10.4362 13.9499L17.0825 7.47115C17.1369 7.41816 17.1802 7.35479 17.2097 7.2848C17.2392 7.21481 17.2545 7.13962 17.2545 7.06365C17.2545 6.98768 17.2392 6.91248 17.2097 6.8425C17.1802 6.77251 17.1369 6.70914 17.0825 6.65615C16.9709 6.54712 16.821 6.48608 16.665 6.48608C16.5089 6.48608 16.3591 6.54712 16.2475 6.65615V6.6574Z" fill="#FDFDFD"/>
+                          </svg>
+                            </div>
                             <small class="form-field__label">минимум 4 человека</small>
 
                         </div>
