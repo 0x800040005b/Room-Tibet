@@ -16,6 +16,12 @@ document.addEventListener("DOMContentLoaded",function(){
                 overlay.classList.toggle('active');
                 navList.classList.toggle('active');
                 burger.classList.toggle('clicked-js');
+                if(navList.classList.contains('active')){
+                  document.body.classList.add('lock');
+                }else{
+                  document.body.classList.remove('lock');
+
+                }
                 makeCloseButtonFromBurger();
             }
           }

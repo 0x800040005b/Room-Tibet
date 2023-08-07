@@ -76,7 +76,7 @@ function fonts() {
 function clear() {
   try{
     fs.rmSync('./dist',{force: true, recursive: true});
-    console.log('all files was removed successfully');
+    console.log('all files were removed successfully');
 
   }catch(error){
     console.log(error);

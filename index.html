@@ -116,7 +116,7 @@
             </div>
         </div>
     </header>
-<!--     <div class="slogan row">
+     <div class="slogan row">
         <div class="container">
             <h1 class="slogan__title">
                 Насладись прогулкой в горах <br/> с командой единомышленников
@@ -160,21 +160,27 @@
         </div>
 
     </div>
- -->
+
 </section>
 
+  
 
-
-<!-- <section class="about">
+ <section class="about">
     <div class="container">
         <div class="about-items row">
             <div class="about-images">
                 <div class="about-image-block about-image-block_1">
-                    <img src="dist/img/About/1_rounded.png" alt="mountains" class="about-image">
+                    <picture>
+                        
+                        <img src="dist/img/About/1_rounded.png" alt="mountains" class="about-image">
+                    </picture>
                 </div>
                 <div class="about-image-block about-image-block_2">
                     <a href="javascript::void(0)" class="about-image__link">
-                        <img src="dist/img/About/2_rounded.png" alt="mountains" class="about-image">
+                        <picture>
+                            <source secret="dist/img/About/2_rounded_mobile.png" media="(max-width:768px)">
+                            <img src="dist/img/About/2_rounded.png" alt="mountains" class="about-image">
+                        </picture>
                         <span class="play">
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
                                  fill="none">
@@ -206,6 +212,8 @@
     </div>
 
 </section>
+ 
+
 <section class="offer">
     <div class="container">
         <div class="row offer-items">
@@ -331,6 +339,7 @@
         </div>
     </div>
 </section>
+
 <section class="popular">
     <div class="container">
         <div class="popular-text">
@@ -592,6 +601,7 @@
     </div>
 
 </section>
+
 <section class="gallery">
     <div class="container">
         <div class="gallery-text">
@@ -608,19 +618,19 @@
             <div class="gallery-item grid-item grid-item_1">
                 <img class="gallery__image" src="dist/img/Share-impressions/1.jpg" alt="1">
             </div>
-            <div class="gallery-item grid-item">
+            <div class="gallery-item grid-item grid-item_2">
                 <img class="gallery__image" src="dist/img/Share-impressions/2.jpg" alt="2">
             </div>
-            <div class="gallery-item grid-item">
+            <div class="gallery-item grid-item grid-item_3">
                 <img class="gallery__image" src="dist/img/Share-impressions/3.jpg" alt="3">
             </div>
-            <div class="gallery-item grid-item">
+            <div class="gallery-item grid-item grid-item_4">
                 <img class="gallery__image" src="dist/img/Share-impressions/4.jpg" alt="4">
             </div>
             <div class="gallery-item grid-item grid-item_5">
                 <img class="gallery__image" src="dist/img/Share-impressions/5.jpg" alt="5">
             </div>
-            <div class="gallery-item grid-item">
+            <div class="gallery-item grid-item grid-item_67">
                 <img class="gallery__image" src="dist/img/Share-impressions/6.jpg" alt="6">
             </div>
 
@@ -642,20 +652,24 @@
                     <p class="text-label subscribe-content__label">актуально</p>
                     <h2 class="text-title subscribe-content__title">Получайте полезные рассылки о путешествиях</h2>
                 </div>
-                <div class="subscribe-form">
+                <div class="subscribe-form__wrapper">
                     <form action="#" method="POST" class="subscribe-form">
-                        <label for="subscribe-email" class="subscribe-label">Введите e-mail адрес</label>
                         <div class="subscribe-fields__wrapper row">
-                            <input type="email" id="subscribe-email" placeholder="name@domain.com" name="email" class="subscribe-field">
-                            <button id="subscribe-btn" type="submit" name="sendButton" class="button small-button hovered-button">
-                                Подписаться на новости
-                            </button>
+                            <label for="subscribe-email" class="subscribe-label">Введите e-mail адрес</label>
+                            <div class="row subscribe-action">
+                                <input type="email" id="subscribe-email" placeholder="name@domain.com" name="email" class="subscribe-field">
+                                <button id="subscribe-btn" type="submit" name="sendButton" class="button small-button hovered-button subscribe-button">
+                                    Подписаться на новости
+                                </button>
+                            </div>
+
                         </div>
+    
 
 
                     </form>
                     <small class="subscribe-small__info ">
-                        подписываясь на новости, вы автоматически соглашаетесь с <a href="#" class="subscribe-small__link">условиями <br/> обработки персональных данных</a> и <a href="#" class="subscribe-small__link">правилами рекламных рассылок</a>
+                        подписываясь на новости, вы автоматически соглашаетесь с <a href="#" class="subscribe-small__link">условиями <br class="br"/> обработки персональных данных</a> и <a href="#" class="subscribe-small__link">правилами рекламных рассылок</a>
                     </small>
 
 
@@ -850,7 +864,6 @@
     </div>
 
 </footer>
- -->
  <div id="overlay" class="overlay"></div>
 
 <script src="dist/js/index.min.js"></script>

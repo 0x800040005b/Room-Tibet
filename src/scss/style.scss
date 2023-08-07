@@ -152,6 +152,10 @@ a{
   width: 30px;
 }
 
+.lock{
+  overflow: hidden;
+}
+
 .line{
   // transform: scale(-1, 1);
   transition: all 0.5s ease;
@@ -184,6 +188,9 @@ a{
 @import "sections/blog";
 @import "sections/gallery";
 @import "sections/footer";
+
+
+@import "sections/media";
 
 
 
