@@ -347,7 +347,7 @@
       &-field {
         max-width: 100%;
         margin-right: 0;
-        margin-bottom: 16px;
+        // margin-bottom: 16px;
       }
       &-button {
         width: 100%;
@@ -453,6 +453,14 @@
       &__text {
         margin-bottom: 16px;
       }
+    }
+  }
+  .subscribe {
+    &-action {
+      flex-direction: column;
+    }
+    &-field {
+      margin-bottom: 16px;
     }
   }
   }

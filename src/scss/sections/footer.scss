@@ -3,7 +3,7 @@
   top: -98px;
   background-color: $white;
   box-shadow: 0px 0px 15px 0px rgba(24, 18, 30, 0.12);
-  padding: 40px 100px;
+  padding: 40px 50px;
   &-content{
     max-width: 380px;
     margin-right: 64px;
@@ -72,7 +72,7 @@
     }
   }
   &-action {
-    align-items: start;
+    width: 100%;
   }
 }
 .footer{
