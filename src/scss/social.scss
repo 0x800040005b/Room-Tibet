@@ -1,0 +1,27 @@
+.top-banner {
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+  }
+  
+  .contacts {
+    justify-content: center;
+    // flex-wrap: wrap;
+    color: #FFFFFF;
+    &-item {
+      margin-right: 40px;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+    &-link {
+      align-items: center;
+      &__text {
+        margin-left: 10px;
+      }
+    }
+  }
+  
