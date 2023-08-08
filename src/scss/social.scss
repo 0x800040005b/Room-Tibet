@@ -28,4 +28,13 @@
       }
     }
   }
+
+  @media (max-width: 576px) {
+    .margin-top-section-reset {
+      margin-top: 0 !important;
+    }
+    .top-banner {
+      display: none;
+    }
+  }
   
