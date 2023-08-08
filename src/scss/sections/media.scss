@@ -59,9 +59,6 @@
     }
 
     .popular {
-      &-items {
-        flex-wrap: wrap;
-      }
       &-item {
         margin-bottom: 20px;
         &:last-of-type {
@@ -287,14 +284,7 @@
       }
     }
   }
-  @media (max-width: 816px) {
-    .popular {
-      &-items {
-        justify-content: center;
-      }
-    }
 
-  }
 
   @media (max-width: 768px) {
     section {

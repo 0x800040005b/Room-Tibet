@@ -1,11 +1,23 @@
+
 .popular{
   &-text{
     text-align: center;
   }
+  &-slider {
+    overflow: hidden;
+  }
+  &-slide {
+    display: flex;
+    justify-content: center;
+  }
   &-items{
     margin-bottom: 50px;
+    // justify-content: center;
+    // overflow: hidden;
   }
   &-item{
+    // overflow: hidden !important;
+    width: 380px!important;
     margin-right: 20px;
     position: relative;
     max-width: 380px;
@@ -14,10 +26,10 @@
       margin-right: 0;
     }
     &__image{
-      width: 380px;
+       width: 380px;
       height: 500px;
       max-width: 380px;
-      max-height: 500px;
+      max-height: 500px; 
       border-radius: 32px;
     }
     &__stars{

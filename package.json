@@ -19,5 +19,8 @@
     "gulp-sass": "^5.1.0",
     "image-min": "^0.3.2",
     "sass": "^1.58.3"
+  },
+  "dependencies": {
+    "swiper": "^10.1.0"
   }
 }
