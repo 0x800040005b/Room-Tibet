@@ -3,6 +3,7 @@
 @import "colors";
 @import "interface/buttons";
 @import "interface/inputs";
+@import "keyframes";
 *,
 *::before,
 *::after {
@@ -19,7 +20,7 @@ html, body{
 }
 
 body{
-  font:{
+  font: {
     family: "Nunito Sans";
     weight: 400;
   }
@@ -75,7 +76,7 @@ a{
   line-height: 83.333%;
   color: $yellow;
   margin-bottom: 8px;
-  font:{
+  font: {
     size: 24px;
     weight: 400;
   }
@@ -86,7 +87,7 @@ a{
   color: $black;
   line-height: 120%;
   margin-bottom: 40px;
-  font:{
+  font: {
     size: 32px;
     weight: 800;
   }
@@ -96,7 +97,7 @@ a{
   color: $black;
   line-height: 150%;
   margin-bottom: 40px;
-  font:{
+  font: {
     size: 18px;
     weight: 400;
   }

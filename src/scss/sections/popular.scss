@@ -1,6 +1,5 @@
-
-.popular{
-  &-text{
+.popular {
+  &-text {
     text-align: center;
   }
   &-slider {
@@ -9,30 +8,31 @@
   &-slide {
     display: flex;
     justify-content: center;
-  }
-  &-items{
-    margin-bottom: 50px;
-    // justify-content: center;
-    // overflow: hidden;
-  }
-  &-item{
-    // overflow: hidden !important;
-    width: 380px!important;
     margin-right: 20px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+  }
+  &-items {
+    margin-bottom: 50px;
+  }
+  &-item {
+    width: 380px !important;
     position: relative;
     max-width: 380px;
     max-height: 500px;
-    &:last-of-type{
+    &:last-of-type {
       margin-right: 0;
     }
-    &__image{
-       width: 380px;
+    &__image {
+      width: 380px;
       height: 500px;
       max-width: 380px;
-      max-height: 500px; 
+      max-height: 500px;
       border-radius: 32px;
     }
-    &__stars{
+    &__stars {
       position: absolute;
       right: 0;
       top: 50px;
@@ -40,15 +40,15 @@
       display: flex;
       align-items: center;
       border-radius: 4px 0px 0px 4px;
-      background: rgba(253, 253, 253, 0.40);
+      background: rgba(253, 253, 253, 0.4);
       backdrop-filter: blur(2px);
     }
-    &-star__icon{
+    &-star__icon {
       margin-right: 4px;
     }
-    &__raiting{
+    &__raiting {
       color: $dark-green;
-      font:{
+      font: {
         size: 14px;
         weight: 700;
       }
@@ -56,64 +56,82 @@
     }
   }
 
-  &-info{
-    &__detail{
-      height: 0;
+  &-info {
+    animation-name: animate-card-back;
+    animation-duration: 5s;
+    top: auto;
+    &.current  {
+      animation-name: animate-card;
+      animation-duration: 1s;
+      top: 0;
+    }
+    display: flex;
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    border-radius: 0px 0px 32px 32px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(3px);
+    &__detail {
+      color: $white;
+      padding: 25px 32px;
+      animation-name: animate-info-back;
+      animation-duration: 1s;
+      top: auto;
+      position: absolute;  
+      &.current {
+        animation-name: animate-info;
+        animation-duration: 1s;  
+        top: 96px;
+        // overflow: visible;
+      
+      }
       overflow: hidden;
     }
-    &__text{
+    &__text {
       display: flex;
       flex-direction: column;
     }
-    &__small{
+    &__small {
       color: $white;
-      font:{
+      line-height: 128.571%;
+      font: {
         size: 14px;
         style: normal;
         weight: 400;
       }
-      line-height: 128.571%;
     }
-    &__description{
+    &__description {
       margin-bottom: 105px;
     }
-    &__title{
+    &__title {
       color: $white;
-      font:{
+      line-height: 120%;
+      font: {
         size: 24px;
         weight: 700;
       }
 
-      line-height: 120%;
     }
 
-    &__price{
+    &__price {
       padding: 8px 16px;
       border-radius: 4px;
-      background: rgba(255, 255, 255, 0.30);
+      background: rgba(255, 255, 255, 0.3);
       color: $white;
       line-height: 120%;
       margin-left: auto;
-      font:{
+      align-self: self-start;
+      font: {
         size: 20px;
         weight: 700;
       }
-
     }
-    display: flex;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
     padding: {
       left: 32px;
       right: 32px;
-      top:25px;
+      top: 25px;
       bottom: 25px;
-    };
-    border-radius: 0px 0px 32px 32px;
-    background: rgba(255, 255, 255, 0.20);
-    backdrop-filter: blur(3px);
-
+    }
   }
-
 }
