@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         timer = setTimeout(function() {
                             hoveredItem.classList.add('current');
                             hoveredItem.classList.add('hover-card');
-                        },1000);
+                        },500);
                         break;
                         case 'mouseout': 
                         clearTimeout(timer);
