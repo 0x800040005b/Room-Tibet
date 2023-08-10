@@ -18,7 +18,17 @@ document.addEventListener("DOMContentLoaded", function() {
             },
             576: {
                 slidesPerView: 1,
-            }
+            },
+
+            540: {
+                slidesPerView: 1,
+
+            },
+            320: {
+                slidesPerView: 1,
+
+            },
+
         }
     
     

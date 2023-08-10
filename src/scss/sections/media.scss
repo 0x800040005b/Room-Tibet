@@ -398,6 +398,14 @@
       }
     }
 
+    .popular {
+      &-item {
+        &__image {
+          width: auto;
+        }
+      }
+    }
+
     .grid {
       &-item {
         &_2, &_3, &_4 {
@@ -468,6 +476,11 @@
     }
   }
   }
-/*   @media (max-width: 390px) {
-
-  } */
+  @media (max-width: 435px) {
+    .popular {
+      &-slide {
+        margin-right: 0;
+      }
+    }
+ 
+  } 
