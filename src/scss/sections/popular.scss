@@ -25,6 +25,17 @@
     &:last-of-type {
       margin-right: 0;
     }
+    &.current .popular-info{
+      animation-name: animate-card;
+      animation-duration: 1s;
+      top: 0;
+    }
+    &.current .popular-info__detail {
+      animation-name: animate-info;
+      animation-duration: 1s;  
+      top: 96px;
+
+    }
     &__image {
       width: 380px;
       height: 500px;
@@ -60,11 +71,6 @@
     animation-name: animate-card-back;
     animation-duration: 5s;
     top: auto;
-    &.current  {
-      animation-name: animate-card;
-      animation-duration: 1s;
-      top: 0;
-    }
     display: flex;
     position: absolute;
     bottom:0;
@@ -79,13 +85,6 @@
       animation-duration: 1s;
       top: auto;
       position: absolute;  
-      &.current {
-        animation-name: animate-info;
-        animation-duration: 1s;  
-        top: 96px;
-        // overflow: visible;
-      
-      }
       overflow: hidden;
     }
     &__text {

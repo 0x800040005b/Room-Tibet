@@ -1,32 +1,75 @@
 document.addEventListener("DOMContentLoaded", function() {
-    console.log(1);
     const popularItems = document.querySelector('#popular-items__container'),
     hoverItemClass = 'popular-item';
+    let timer = null;
 
-    popularItems.addEventListener('mouseover', mouseOverCardHandler);
-    popularItems.addEventListener('mouseout', mouseOutCardHandler);
+
+
+    popularItems.addEventListener('mouseover', mouseOverAndOutCardHandler);
+    document.addEventListener("mouseover", checkHoverCardsHandler);
+    popularItems.addEventListener('mouseout', mouseOverAndOutCardHandler);
+    // popularItems.addEventListener('click', clickCardCardHandler);
 
 /* Event Handlers */
-    function mouseOverCardHandler(evt) {
-        console.log('mouseEnterCardHandler');
+    function mouseOverAndOutCardHandler(evt) {
         const hoveredItem = evt.target.closest('.'+ hoverItemClass);
         if(hoveredItem !== undefined && hoveredItem !== null) {
-            const popularInfoBlock = hoveredItem.querySelector('.popular-info'),
-                  popularInfoDetailBlock = hoveredItem.querySelector('.popular-info__detail');
-                  popularInfoBlock.classList.add('current');
-                  popularInfoDetailBlock.classList.add('current');
+                  switch (evt.type) {
+                    case 'mouseover':
+                        if(evt.target.closest('.popular-items') !== null) {
+                            if(hoveredItem.classList.contains('hover-card')){
+                                clearTimeout(timer);
+                                return;
+                            }else{
+                                resetAllHover();
+                            } 
+                        }
+                        timer = setTimeout(function() {
+                            hoveredItem.classList.add('current');
+                            hoveredItem.classList.add('hover-card');
+                        },1000);
+                        break;
+                        case 'mouseout': 
+                        clearTimeout(timer);
+                        if(!hoveredItem.classList.contains('hover-card')){
+                            clearTimeout(timer);
+                            resetAllHover();
+
+                        }
+
+                        break;
+                  }
         }
     }
-    function mouseOutCardHandler(evt) {
-        console.log("mouseLeaveCardHandler");
+
+    function clickCardCardHandler(evt){
         const hoveredItem = evt.target.closest('.'+ hoverItemClass);
-        if(hoveredItem !== undefined && hoveredItem !== null) {
-            const popularInfoBlock = hoveredItem.querySelector('.popular-info'),
-            popularInfoDetailBlock = hoveredItem.querySelector('.popular-info__detail');
-            popularInfoBlock.classList.remove('current');
-            popularInfoDetailBlock.classList.remove('current');
+        if(hoveredItem.classList.contains('hover-card')){
+            hoveredItem.classList.remove('hover-card');
+            hoveredItem.classList.remove('current');
+    
+        }
+        else{
+            hoveredItem.classList.add('hover-card');
+            hoveredItem.classList.add('current');
 
         }
+
+    }
+
+    function checkHoverCardsHandler(evt){
+        if(evt.target.closest('#popular-items__container') === null) {
+            resetAllHover();
+        }
+    }
+
+
+
+    function resetAllHover() {
+     document.querySelectorAll('.hover-card').forEach(function(item){
+        item.classList.remove('hover-card');
+        item.classList.remove('current');
+     });   
     }
 
 });
