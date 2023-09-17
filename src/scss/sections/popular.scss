@@ -4,6 +4,18 @@
   }
   &-item {
     position: relative;
+    &.current .popular-info{
+      animation-name: animate-card;
+      animation-duration: 1s;
+      top: 0;
+    }
+    &.current .popular-info__detail {
+      animation-name: animate-info;
+      animation-duration: 1s;
+      top: 96px;
+
+    }
+
 
     &__link {
       position: relative;
@@ -61,8 +73,12 @@
       }
     }
     &__detail {
-      width: 0;
-      height: 0;
+      color: $white;
+      padding: 25px 32px;
+      animation-name: animate-info-back;
+      animation-duration: 1s;
+      top: auto;
+      position: absolute;
       overflow: hidden;
     }
     &__price {
