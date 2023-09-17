@@ -240,8 +240,29 @@
       }
       &-images {
         flex-direction: row;
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+      &-image {
+        &__block {
+          margin-bottom: 0;
+          &_odd {
+            margin-right: 10px;
+          }
+
+        }
       }
     }
+
+  .about {
+    &-image {
+      &__block {
+        &_2 {
+          position: static;
+        }
+      }
+    }
+  }
 
     .blog {
       &-items {

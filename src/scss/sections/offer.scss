@@ -31,17 +31,12 @@
   }
   &-images{
     flex-direction: column;
+    margin-right: 10px;
 
   }
   &-image{
-    &__block{
-      margin-right: 10px;
+    &__block {
       margin-bottom: 10px;
-
-      &:last-of-type{
-        margin-right: 0;
-        margin-bottom: 0;
-      }
     }
   }
 }
