@@ -1,3 +1,9 @@
+@media (hover: none) {
+  .hovered-button:hover{
+    background-color: $dark-green;
+    color: $white;
+  }
+}
 @media (max-width: 1800px) {
 
     .slogan{
@@ -58,14 +64,7 @@
       }
     }
 
-    .popular {
-      &-item {
-        margin-bottom: 20px;
-        &:last-of-type {
-          margin-bottom: 0;
-        }
-      }
-    }
+ 
     .gallery {
       &-items {
         justify-content: center;
@@ -101,7 +100,7 @@
   
   @media (max-width: 991px) {
     .container {
-      padding:{
+      padding: {
         left: 10px;
         right: 10px;
       }
@@ -398,14 +397,6 @@
       }
     }
 
-    .popular {
-      &-item {
-        &__image {
-          width: auto;
-        }
-      }
-    }
-
     .grid {
       &-item {
         &_2, &_3, &_4 {
@@ -447,6 +438,13 @@
       font-size: 16px;
       line-height: 150%;
     }
+    .grid {
+      &-item {
+        &_6 {
+          grid-column: span 2;
+        }
+      }
+    }
 
 
  /*    .grid{
@@ -476,11 +474,3 @@
     }
   }
   }
-  @media (max-width: 435px) {
-    .popular {
-      &-slide {
-        margin-right: 0;
-      }
-    }
- 
-  } 

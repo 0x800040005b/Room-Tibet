@@ -54,7 +54,10 @@ function css() {
 function javascript() {
     return gulp.src(paths.input.js)
     .pipe(jsmin())
-    .pipe(concat('index.min.js'))
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    // .pipe(concat('index.min.js'))
     .pipe(gulp.dest(paths.output.js))
     .pipe(browser.stream());
 

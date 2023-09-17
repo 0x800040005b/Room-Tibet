@@ -1,41 +1,30 @@
-import Swiper from "https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs";
 
 document.addEventListener("DOMContentLoaded", function() {
     const swiper = new Swiper('.popular-slider', {
-        slidesPerView: 2,
-        slidesPerGroup: 1,
-        centeredSlides: true,
-        initialSlide: 1,
+        slidesPerView: 3, 
+        spaceBetween: 10,   
         breakpoints: {
-            1200: {
-                slidesPerView: 3,
-    
+            991: {
+                slidesPerView:3,
+                // SlidesPerGroup: 3,
+                spaceBetween: 20,
+        
             },
-            768: {
-                slidesPerView: 2,
-                spaceBetween: 0,
-                
-            },
-            576: {
-                slidesPerView: 1,
-            },
+            475: {
+                slidesPerView:1,
+                SlidesPerGroup: 1,
 
-            540: {
-                slidesPerView: 1,
+                // spaceBetween: 130,
 
             },
+
             320: {
-                slidesPerView: 1,
+                slidesPerView:1,
+                SlidesPerGroup:1,
+                spaceBetween: 70,
 
-            },
-
+            }
         }
+    })  
     
-    
-        
-    
-    
-        
-    });
-    
-})
+});

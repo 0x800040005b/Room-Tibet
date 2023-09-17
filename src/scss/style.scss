@@ -1,4 +1,6 @@
 @import "normalize";
+@import "swiper";
+@import "swiper_customize";
 @import "fonts";
 @import "colors";
 @import "interface/buttons";
@@ -64,7 +66,7 @@ a{
 }
 .fullscreen{
   min-height: 100vh;
-  height: 100vh;
+  // height: 100vh;
   padding-top: 0;
   padding-bottom: 0;
 }
