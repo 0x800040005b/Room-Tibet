@@ -7,12 +7,13 @@
     &.current .popular-info{
       animation-name: animate-card;
       animation-duration: 1s;
-      top: 0;
+      top: -81%;
     }
     &.current .popular-info__detail {
       animation-name: animate-info;
       animation-duration: 1s;
       top: 96px;
+      left: 0;
 
     }
 
@@ -45,12 +46,19 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    background: rgba($white, 20%);
+    background: rgba($white, 0.2);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    animation-name: animate-card-back;
+    animation-duration: 3s;
+    top: auto;
+    border-radius: 0 0 32px 32px;
+    backdrop-filter: blur(3px);
+    padding: 20px 0 20px 32px;
+
     &__text {
-      padding: 20px 0 20px 32px;
+
       display: flex;
       flex-direction: column;
 
@@ -93,6 +101,10 @@
         weight: 700;
 
       }
+    }
+
+    &__description {
+      margin-bottom: 105px;
     }
   }
 }
