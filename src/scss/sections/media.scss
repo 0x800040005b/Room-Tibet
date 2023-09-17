@@ -411,7 +411,8 @@
             width: 100%;
             margin-right: 0;
             & img {
-              width: 100%;
+              //width: 100%;
+              margin: 0 auto;
             }
           }
         }
@@ -505,6 +506,19 @@
     &-item {
       &_2, &_3, &_4 {
         grid-column: span 2;
+      }
+    }
+  }
+
+  .blog{
+    &-item {
+      &__image {
+        &-wrapper {
+          & img{
+            width: 100%;
+            height: auto;
+          }
+        }
       }
     }
   }
