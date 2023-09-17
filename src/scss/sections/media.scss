@@ -88,17 +88,27 @@
       }
     }
     }
-    @media (max-width: 1179px) {
+@media (max-width: 1179px) {
       .gallery {
         &-items {
           grid-auto-flow: row dense;
 
         }
       }
+      .popular {
+        &-info {
+          &__text {
+            padding-left: 15px;
+          }
+          &__price {
+            margin-right: 15px;
+          }
+        }
+      }
     }
 
   
-  @media (max-width: 991px) {
+@media (max-width: 991px) {
     .container {
       padding: {
         left: 10px;
@@ -287,7 +297,7 @@
   }
 
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     section {
       padding: {
         top:50px;
@@ -326,6 +336,8 @@
     }
 
 
+
+
     .subscribe {
       & .br {
         display: none;
@@ -362,6 +374,18 @@
       }
     }
   }
+@media (max-width: 686px) {
+  .popular {
+    &-info {
+      justify-content: space-between;
+    }
+    &-item {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  }
+
 
   @media (max-width: 576px) {
     .blog{
@@ -397,13 +421,7 @@
       }
     }
 
-    .grid {
-      &-item {
-        &_2, &_3, &_4 {
-          grid-column: span 2;
-        }
-      }
-    }
+
     .footer {
       &-bottom {
         &__items {
@@ -438,12 +456,19 @@
       font-size: 16px;
       line-height: 150%;
     }
+    .gallery {
+      &-items {
+        grid-template-columns: repeat(1,98%);
+      }
+    }
     .grid {
       &-item {
-        &_6 {
+        width: 100%;
+        &_2, &_3, &_4, &_6 {
           grid-column: span 2;
         }
       }
+
     }
 
 
@@ -473,4 +498,42 @@
       margin-bottom: 16px;
     }
   }
+  }
+
+@media (max-width: 390px) {
+  .grid {
+    &-item {
+      &_2, &_3, &_4 {
+        grid-column: span 2;
+      }
+    }
+  }
+
+
+}
+  @media (max-width: 375px) {
+    .slogan {
+      &__title {
+        font-size: 25px;
+      }
+    }
+    .about {
+      &-images {
+        margin-right: 0;
+      }
+      &-image-block_2 {
+        top: 0;
+        left: 0;
+      }
+    }
+    .popular {
+      &-info {
+        &__title {
+          font-size: 20px;
+        }
+        &__price {
+          padding: 4px
+        }
+      }
+    }
   }

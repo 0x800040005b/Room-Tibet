@@ -8,13 +8,27 @@ document.addEventListener("DOMContentLoaded", function() {
                 slidesPerView:3,
                 // SlidesPerGroup: 3,
                 spaceBetween: 20,
+                centeredSlides: false,
         
+            },
+            752: {
+              slidesPerView: 2,
+                slidesPerGroup: 1,
+                centeredSlides: false,
+            },
+            687: {
+                slidesPerView:2,
+                slidesPerGroup:1,
+                // centeredSlides: true,
+
             },
             475: {
                 slidesPerView:1,
-                SlidesPerGroup: 1,
+                slidesPerGroup:1,
+                centeredSlides: true,
+                centeredSlidesBounds: true,
 
-                // spaceBetween: 130,
+                spaceBetween: 30,
 
             },
 
