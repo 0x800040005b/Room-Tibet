@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function() {
         breakpoints: {
             991: {
                 slidesPerView:3,
-                // SlidesPerGroup: 3,
                 spaceBetween: 20,
                 centeredSlides: false,
         
@@ -19,17 +18,13 @@ document.addEventListener("DOMContentLoaded", function() {
             687: {
                 slidesPerView:2,
                 slidesPerGroup:1,
-                // centeredSlides: true,
-
             },
             475: {
                 slidesPerView:1,
                 slidesPerGroup:1,
                 centeredSlides: true,
                 centeredSlidesBounds: true,
-
                 spaceBetween: 30,
-
             },
 
             320: {
