@@ -1,0 +1,141 @@
+.fullscreen-top {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-image: url("../img/Fullscreen/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: 28px;
+}
+
+.slogan {
+  justify-content: center;
+  align-items: start;
+  margin-top: 463px;
+
+  &__title {
+
+    color: $white;
+    line-height: 150%;
+    letter-spacing: 1px;
+    font: {
+      family: "NEXT ART";
+      size: 50px;
+      weight: 700;
+    }
+  }
+}
+
+.calculator {
+  padding: 42px 40px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(3px);
+}
+
+.form{
+  &-block{
+    //justify-content: center;
+    align-items: start;
+  }
+  &-field{
+    height: 52px;
+    width: 270px;
+    max-width: 270px;
+    padding: 8px 16px;
+    margin-bottom: 8px;
+    &-wrapper{
+      margin-right: 24px;
+      &:last-of-type{
+        margin-right: 0;
+      }
+    }
+  
+
+    &__label {
+      display: block;
+      color: $white;
+      line-height: 150%;
+      font: {
+        size:14px;
+        weight: 400;
+      }
+    }
+  }
+  &-controls {
+    position: relative;
+  }
+  &-select {
+    background-color: transparent;
+    color: $white;
+    border:1px solid $white;
+    border-radius: 4px;
+    line-height: 150%;
+    position: relative;
+    font: {
+      size: 16px;
+      weight:700
+    }
+    appearance: none;            /* remove arrow        */
+    -webkit-appearance: none;    /* remove arrow Chrome */
+    -moz-appearance: none;       /* remove arrow FF     */
+    outline:none;
+    &__arrow {
+      position: absolute;
+      top: 25%;
+      right: 10px;
+      pointer-events: none;
+    }
+    & option {
+      color: $black;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+    } 
+    &-calendar {
+      &__icon {
+        position: absolute;
+        top: 25%;
+        right: 10px;
+        pointer-events: none;
+      }
+    }
+  }
+
+
+
+ select::-ms-expand{
+  display: none;             /* remove arrow IE     */
+}
+
+
+.program {
+  &-date {
+    &::-webkit-inner-spin-button,
+    &::-webkit-calendar-picker-indicator {
+
+      color-scheme: dark;
+    }
+  }
+  &-button {
+    color: $dark-green;
+    background-color: $white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+    letter-spacing: 0.192px;
+    transition: color, background-color 0.5s ease;
+    border: none;
+    margin-left: 24px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $dark-green;
+      color: $white;
+    }
+  }
+
+}
+

@@ -1,0 +1,78 @@
+.header{
+  &-items{
+    align-items: center;
+  }
+
+  &-logo{
+    margin-right: 212px;
+  }
+  &-nav{
+    margin-right: 49px;
+  }
+}
+
+.nav{
+  &-list{
+    transition: all 0.5s ease;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    font:{
+      size: 18px;
+      weight: 600;
+    }
+    color: $white;
+    line-height: normal;
+    &__item{
+      margin-right: 24px;
+      &:last-of-type{
+        margin-right: 0;
+      }
+    }
+    &__link{
+      display: block;
+      position: relative;
+      transition: background-color, width .3s ease;
+      &:hover{
+        color: $yellow;
+        &::after{
+          background-color: $yellow;
+        }
+      }
+      &:active{
+        color: $yellow;
+        &::after{
+          background-color: $yellow;
+        }
+
+      }
+      &-arrow{
+        margin-right: 10px;
+        display: none;
+        fill: inherit;
+      }
+      &::after{
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: $white;
+        transition: background-color, width .3s ease;
+
+      }
+      &:hover{
+        &::after{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+
+.burger{
+  display: none;
+  background-color: transparent;
+  border: none;
+}
+

@@ -1,0 +1,26 @@
+.gallery{
+  padding-bottom: 198px;
+  &-text{
+    text-align: center;
+    margin: 0 auto;
+  }
+  &-items{
+    //grid-template-rows: repeat(2, 520px);
+    grid-template-columns: repeat(4, 280px);
+    gap: 20px;
+
+  }
+  &__image{
+    width: 100%;
+    max-height: 250px;
+  }
+}
+.grid-item{
+  max-height: 250px;
+  &_1{
+    grid-column: span 2;
+  }
+  &_5{
+    grid-column: span 2;
+  }
+}

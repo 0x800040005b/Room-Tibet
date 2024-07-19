@@ -1,0 +1,110 @@
+.popular {
+  &-text {
+    text-align: center;
+  }
+  &-item {
+    position: relative;
+    &.current .popular-info{
+      animation-name: animate-card;
+      animation-duration: 1s;
+      top: -81%;
+    }
+    &.current .popular-info__detail {
+      animation-name: animate-info;
+      animation-duration: 1s;
+      top: 96px;
+      left: 0;
+
+    }
+
+
+    &__link {
+      position: relative;
+    }
+    &__image {
+      border-radius: 32px;
+      max-height: 500px;
+
+    }
+    &__stars {
+      position: absolute;
+      top:58px;
+      right: 0;
+      padding: 4px 8px;
+      background: rgba($white, 0.4);
+      border-radius: 4px 0 0 4px;
+      display: flex;
+      align-items: center;
+    }
+    &__raiting {
+      line-height: 18px;
+      font-weight: 700;
+      color: $dark-green;
+    }
+  }
+  &-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba($white, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation-name: animate-card-back;
+    animation-duration: 3s;
+    top: auto;
+    border-radius: 0 0 32px 32px;
+    backdrop-filter: blur(3px);
+    padding: 20px 0 20px 32px;
+
+    &__text {
+
+      display: flex;
+      flex-direction: column;
+
+    }
+    &__title {
+      line-height: 28.8px;
+      color: $white;
+      font:{
+        size: 24px;
+        weight: 700;
+      }
+    }
+    &__small {
+      //display: block;
+      line-height: 18px;
+      color: $white;
+      font: {
+        size: 14px;
+        weight: 400;
+      }
+    }
+    &__detail {
+      color: $white;
+      padding: 25px 32px;
+      animation-name: animate-info-back;
+      animation-duration: 1s;
+      top: auto;
+      position: absolute;
+      overflow: hidden;
+    }
+    &__price {
+      background: rgba($white, 30%);
+      padding: 8px 16px;
+      border-radius: 4px;
+      line-height: 24px;
+      color: $white;
+      margin-right: 32px;
+      font: {
+        size: 20px;
+        weight: 700;
+
+      }
+    }
+
+    &__description {
+      margin-bottom: 105px;
+    }
+  }
+}

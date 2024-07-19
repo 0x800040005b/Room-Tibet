@@ -1,0 +1,43 @@
+.offer{
+  background-color: $gray;
+  &-list{
+    &__item{
+      margin-bottom: 40px;
+      align-items: start;
+    }
+    &__title{
+      margin-bottom: 4px;
+    }
+    &__content{
+      font-size: 14px;
+    }
+
+  }
+
+  &__icon{
+    padding: 7px;
+    background-color: $dark-gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    width: 50px;
+    height: 50px;
+    margin-right: 16px;
+  }
+  &-text{
+    margin-right: 90px;
+
+  }
+  &-images{
+    flex-direction: column;
+    margin-right: 10px;
+
+  }
+  &-image{
+    &__block {
+      margin-bottom: 10px;
+    }
+  }
+}
+
